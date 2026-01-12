@@ -1,0 +1,256 @@
+{
+  "voice": {
+    "name": "Rume Dominic",
+    "tone": "Elite, soulful, British-Nigerian, authoritative, high-tension, psychological",
+    "keywords": [
+      "Infrastructure",
+      "Digital Sovereign",
+      "180B creator economy",
+      "Silent Killers",
+      "Digital Dark Age",
+      "Digital Passport",
+      "Global South",
+      "Time-Collapse",
+      "Visual Capital",
+      "Niche Warlord"
+    ]
+  },
+  "pricing": {
+    "price": "$9.99",
+    "competitor_price": "$50",
+    "value_prop": "The only logical solution"
+  },
+  "tools": [
+    {
+      "name": "Dashboard Overview",
+      "description": "Channel's Control Center. Real-time snapshot of performance.",
+      "features": [
+        "Channel Analytics",
+        "Monetization Status Tracker (Watch Hours/Subs)",
+        "Best Time to Post AI",
+        "Achievement Levels (Gamification)"
+      ]
+    },
+    {
+      "name": "Video Optimizer",
+      "description": "Individual Video Performance Enhancer.",
+      "features": [
+        "Focus Keyword Detection",
+        "Quick Optimization Actions",
+        "AI-Powered Recommendations",
+        "Performance Boost Toggles"
+      ]
+    },
+    {
+      "name": "Video Optimizer (AI Mode)",
+      "description": "Intelligent Content Enhancement.",
+      "features": [
+        "AI-Optimized Description Builder",
+        "Smart Tag Suggestions",
+        "Audience Targeting Settings (Niche, Age, Tone)",
+        "Video Intent Selector"
+      ]
+    },
+    {
+      "name": "Channel Insights",
+      "description": "In-Depth Performance Intelligence.",
+      "features": [
+        "Upload Timing Heatmap",
+        "Competitor Channel Analyzer",
+        "Top Videos Breakdown"
+      ]
+    },
+    {
+      "name": "AI Title Generator",
+      "description": "Smart Headline Creation.",
+      "features": [
+        "Virality Score",
+        "CTR Predictions",
+        "Niche/Tone Selection",
+        "PDF Export"
+      ]
+    },
+    {
+      "name": "AI Script Generator",
+      "description": "Complete Structured Video Scripts.",
+      "features": [
+        "Hook Generator",
+        "Time-Stamped Segments",
+        "Narrative Structure",
+        "Tone Customization"
+      ]
+    },
+    {
+      "name": "YouTube-to-Blog Converter",
+      "description": "Repurpose Video to Text.",
+      "features": [
+        "Multi-Section Blog Output",
+        "SEO-Optimized Formatting",
+        "Instant formatting for Newsletters"
+      ]
+    },
+    {
+      "name": "Trending Videos Finder",
+      "description": "Discover High-Performing Content.",
+      "features": [
+        "Region & Time Filters",
+        "Top-10 Carousel",
+        "Metadata Espionage (Spy on competitors tags)"
+      ]
+    },
+    {
+      "name": "Keyword Explorer",
+      "description": "Discover High-Potential Keywords.",
+      "features": [
+        "Viral Potential Tagging",
+        "Trend Direction (Rising/Falling)",
+        "Competition Score",
+        "relevance Score"
+      ]
+    },
+    {
+      "name": "Social Media Post Generator",
+      "description": "Platform-Ready AI Content.",
+      "features": [
+        "Unified Topic Input",
+        "Variations for LinkedIn, Twitter, IG",
+        "One-Click Export"
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "pain_point": "Invisible Art",
+      "pain_description": "Great content ignored because of weak packaging.",
+      "tool_name": "AI Thumbnail Generator",
+      "solution_feature": "High-Converting Thumbnails in seconds",
+      "id": "thumbnails"
+    },
+    {
+      "pain_point": "The Blind Pilot",
+      "pain_description": "Flying without data, guessing instead of knowing.",
+      "tool_name": "Keyword Explorer",
+      "solution_feature": "Deep Market Data & Viral Potential Tagging",
+      "id": "data"
+    },
+    {
+      "pain_point": "Silent Metadata",
+      "pain_description": "Being unsearchable; invisible to the algorithm.",
+      "tool_name": "Video Optimizer (AI Mode)",
+      "solution_feature": "AI-Optimized Description Builder & Focus Keyword Detection",
+      "id": "seo"
+    },
+    {
+      "pain_point": "The Content Hamster Wheel",
+      "pain_description": "Creating once, using once. Wasting the asset.",
+      "tool_name": "YouTube-to-Blog Converter",
+      "solution_feature": "Turn 1 video into 10 assets (Blog, Twitter, LinkedIn, IG)",
+      "id": "repurposing"
+    },
+    {
+      "pain_point": "Monetization Limbo",
+      "pain_description": "Not knowing exactly how close you are to the paycheque.",
+      "tool_name": "Dashboard Overview",
+      "solution_feature": "Real-time Monetization Readiness Indicator",
+      "id": "money"
+    },
+    {
+      "pain_point": "Niche Blindness",
+      "pain_description": "Creating content for an audience that doesn't exist.",
+      "tool_name": "Trending Videos Finder",
+      "solution_feature": "Identify top-ranking videos in any country/timeframe",
+      "id": "trends"
+    },
+    {
+      "pain_point": "Writer's Block",
+      "pain_description": "Staring at a blank page, wasting hours.",
+      "tool_name": "AI Script Generator",
+      "solution_feature": "Instant Hooks, Timestamps, and Narrative Structure",
+      "id": "script"
+    }
+  ],
+  "strategies": [
+    {
+      "name": "The David vs Goliath",
+      "hook": "They have budget. You have agility.",
+      "angle": "Positioning the $50 tools as bloated legacy software."
+    },
+    {
+      "name": "The Infrastructure Play",
+      "hook": "Stop building on sand. Build on bedrock.",
+      "angle": "Focusing on data ownership and long-term asset security."
+    },
+    {
+      "name": "The Speed Demon",
+      "hook": "Speed is the new currency.",
+      "angle": "Highlighting how Version 2.0 saves hours of work."
+    },
+    {
+      "name": "The Global South Awakening",
+      "hook": "Silicon Valley doesn't understand your market. We do.",
+      "angle": "Direct appeal to emerging markets and accessibility."
+    },
+    {
+      "name": "The Algorithm Whisperer",
+      "hook": "You are shouting. You need to whisper.",
+      "angle": "Technical breakdown of how metadata influences discovery."
+    },
+    {
+      "name": "The Time-Collapse Paradox",
+      "hook": "We collapsed 4 hours of work into 4 seconds.",
+      "angle": "Psychological focus on the value of time. You aren't buying software; you are buying your life back."
+    },
+    {
+      "name": "The Dopamine Architect",
+      "hook": "Your career is a game. Are you winning?",
+      "angle": "Focus on the 'Achievement Levels' feature. Gamify the grind to keep creators motivated."
+    },
+    {
+      "name": "The Omni-Channel Sovereign",
+      "hook": "Be everywhere, all at once. Without the burnout.",
+      "angle": "Focus on the 'Social Media Post Generator'. Dominate X, LinkedIn, and Web simultaneously."
+    },
+    {
+      "name": "The Niche Warlord",
+      "hook": "Do not just enter a niche. Conquer it.",
+      "angle": "Focus on 'Trending Videos Finder'. Use data to seek and destroy weak competitors."
+    },
+    {
+      "name": "The Reddit Detective",
+      "hook": "500M people are complaining. We are listening.",
+      "angle": "Use specific 'I can't stand' phrases from Reddit to pinpoint pain. Then sell the aspirin."
+    }
+  ],
+  "reddit_simulations": [
+    {
+      "title": "I'm struggling with consistency. It feels like a second job.",
+      "description": "I work 9-5 and by the time I get home, I have zero energy to edit hashtags or think of titles. I just post whatever and it flops.",
+      "comments": [
+        "Same here man, the metadata kills me.",
+        "I spend more time tagging than filming.",
+        "Is there a tool that just does this?"
+      ],
+      "pain_id": "seo"
+    },
+    {
+      "title": "How do you guys find topics that actually get views?",
+      "description": "I feel like I'm guessing. My last 5 videos got <50 views. I don't know what people in my niche (Gaming) actually want.",
+      "comments": [
+        "You need to research before you record.",
+        "Check Google Trends?",
+        "Most of us are just guessing tbh."
+      ],
+      "pain_id": "trends"
+    },
+    {
+      "title": "Biggest struggle: Making a blog for my channel.",
+      "description": "Everyone says 'start a blog' for SEO, but I am a video editor, not a writer. How do you convert video to text without it taking 5 hours?",
+      "comments": [
+        "Transcribing is hell.",
+        "I pay a freelancer $50 per post.",
+        "I just don't do it."
+      ],
+      "pain_id": "repurposing"
+    }
+  ]
+}
