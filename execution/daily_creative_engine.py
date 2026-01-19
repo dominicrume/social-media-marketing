@@ -8,6 +8,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import viral_lab
 import ai_refiner
+import simera_brain
+import studio_production
 
 # Manual .env loader to avoid dependency issues
 def load_env_manual():
@@ -49,9 +51,13 @@ def generate_daily_email(kb, force_strategy=None):
     viral_report = ""
     if strategy['name'] == "The Reddit Detective":
         # Find a reddit simulation that matches the current pain point if possible
-        # Or just pick a random one for variety
         r_sim = random.choice(kb.get('reddit_simulations', []))
         viral_report = viral_lab.generate_viral_ideas(r_sim['pain_id'], item['tool_name'], r_sim)
+
+    # SIMERA NARRATIVE ENGINE
+    simera = simera_brain.SimeraContentMachine()
+    details_narrative = simera.generate_narrative(item['tool_name'], item['pain_point'], platform="Reddit")
+    linkedin_narrative = simera.generate_narrative(item['tool_name'], item['pain_point'], platform="LinkedIn")
     
     body = f"""
     Rume,
@@ -70,73 +76,74 @@ def generate_daily_email(kb, force_strategy=None):
     {strategy['angle']}
     ---
     
-    [LINKEDIN DRAFT]
-    Headline: {strategy['hook']} Why {item['pain_point']} is keeping you small.
+    [LINKEDIN DRAFT - ELITE NARRATIVE]
+    {linkedin_narrative}
     
-    The giants of the industry are slow. They are expensive.
-    You are paying {kb['pricing']['competitor_price']} to fund their overhead.
-    
-    We built YTubeBooster PRO V2.0 for the builders.
-    The {item['tool_name']} isn't just a feature. It's an equalizer.
-    
-    WHAT IT SOLVES: {item['pain_description']}
-    THE FIX: {item['solution_feature']}. 
-    
-    Join the 10,000 Alpha Leaders.
-    {kb['pricing']['price']}. Digital Sovereignty.
-    
-    #YTBPro #CreatorEconomy
+    [REDDIT / STORY DRAFT]
+    {details_narrative}
     
     -------------------------------------------------------
     
     [X / TWITTER THREAD]
     1/5
-    {strategy['hook']}
-    The era of the $50 subscription is over.
+    The $50 wall is crumbling.
+    You are suffering from "{item['pain_point']}".
     
     2/5
-    Legacy tools want you to rent your audience.
-    We want you to own your infrastructure.
+    The "Ghost Note" you are missing isn't effort. It's infrastructure.
+    Legacy tools charge you tax. We give you a passport.
     
     3/5
-    The Pain: {item['pain_point']}
-    ("{item['pain_description']}")
+    The Fix: {item['tool_name']}.
+    {item['solution_feature']}.
     
     4/5
-    The Fix: {item['tool_name']}
-    {item['solution_feature']}
+    V2.0 is visually stunning. Futuristic. 
+    A dashboard for the Niche Warlord.
     
     5/5
-    V2.0 is live. Stylish. Futuristic.
-    Built for the {strategy['name']} generation.
-    Link in bio.
+    {kb['pricing']['price']}.
+    Join the Alpha Leaders.
     
     -------------------------------------------------------
     
     [VIDEO SCRIPT CONCEPT]
-    Hook: Stare at camera. "{strategy['hook']}"
-    Problem: "You are suffering from {item['pain_point']}."
-    Agitate: "{item['pain_description']}"
-    Solution: Show {item['tool_name']} interface. "This is {item['solution_feature']}."
-    CTA: "This is 2.0. {kb['pricing']['price']}."
-    
+    Hook: Stare at camera. "You are flying blind."
+    Problem: "This is the Digital Dark Age. {item['pain_point']}."
+    Solution: Show V2.0 Dashboard. "This is {item['tool_name']}."
+    Payoff: "Stylish. Futuristic. {kb['pricing']['price']}."
     """
     
-    # --- STAGE 2: AI REFINEMENT (The "Rume Dominic" Filter) ---
-    print("--- Sending Draft to AI Refiner (OpenAI) ---")
-    refined_body = ai_refiner.refine_content(body, strategy['name'], kb)
+    # --- STAGE 2: STUDIO PRODUCTION (Video/Slides/Infographics) ---
+    print("--- Generating Multimedia Assets (Studio Mode) ---")
+    production_brief = studio_production.create_production_brief(body)
+    
+    # --- STAGE 3: FLOCK NOTIFICATION ---
+    print("--- Dispatching to Flock for Human Review ---")
+    studio_production.dispatch_to_flock(production_brief)
     
     final_body = f"""
     Rume,
     
-    Here is your REFINED "Digital Sovereign" marketing packet.
-    (Refined by GPT-4o Persona)
+    Here is your "Digital Sovereign" Strategy Packet.
     
-    {refined_body}
+    =========================================
+    PART 1: STRATEGY & NARRATIVE
+    =========================================
+    {body}
+    
+    =========================================
+    PART 2: STUDIO PRODUCTION BRIEF
+    (Generated for Video, Slides, and Design Team)
+    =========================================
+    {production_brief}
     
     -------------------------------------------------------
-    ORIGINAL DRAFT (For Reference):
-    {body}
+    [SYSTEM STATUS]
+    - Strategy: {strategy['name']}
+    - Narrative Engine: Simera Brain (Active)
+    - Production Brief: Generated
+    - Flock Notification: Attempted
     """
     
     return subject, final_body

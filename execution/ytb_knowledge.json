@@ -12,7 +12,13 @@
       "Global South",
       "Time-Collapse",
       "Visual Capital",
-      "Niche Warlord"
+      "Niche Warlord",
+      "Ghost Notes",
+      "Invisibility Tax",
+      "Blind Pilots",
+      "The Wall",
+      "Billion Dollar Engine",
+      "Mobile Sovereignty"
     ]
   },
   "pricing": {
@@ -144,7 +150,7 @@
       "pain_point": "The Content Hamster Wheel",
       "pain_description": "Creating once, using once. Wasting the asset.",
       "tool_name": "YouTube-to-Blog Converter",
-      "solution_feature": "Turn 1 video into 10 assets (Blog, Twitter, LinkedIn, IG)",
+      "solution_feature": "Turn 1 video into 10 assets (Blog, Twitter, LinkedIn, IG). The NotebookLM Strategy.",
       "id": "repurposing"
     },
     {
@@ -219,6 +225,21 @@
       "name": "The Reddit Detective",
       "hook": "500M people are complaining. We are listening.",
       "angle": "Use specific 'I can't stand' phrases from Reddit to pinpoint pain. Then sell the aspirin."
+    },
+    {
+      "name": "The Content Multiplier",
+      "hook": "One video. Five days of dominance.",
+      "angle": "Leverage the NotebookLM strategy. Stop creating, start multiplying."
+    },
+    {
+      "name": "The Ghost Note Protocol",
+      "hook": "The music you don't hear is what makes you feel. The features you don't use are why you fail.",
+      "angle": "Psychological approach: Identify the 'Ghost Note' (missing element) in their channel infrastructure. It isn't effort; it's the tool."
+    },
+    {
+      "name": "The Apple Store Standard",
+      "hook": "Your channel is an App. Is it ready for the store?",
+      "angle": "Treating the creator's channel like a Billion Dollar App launch. Focus on 'Fixing' the bugs (metadata) and 'Deploying' (publishing)."
     }
   ],
   "reddit_simulations": [
